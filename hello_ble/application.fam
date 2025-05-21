@@ -1,8 +1,11 @@
-App {
-    Type: Application
-    Name: Hello BLE
-    Version: 1
-    Exec: hello_ble_main
-    Description: Demo BLE Hello World
-    Author: Tristan MIGNON
-}
+App(
+    appid="hello_ble",               # nom interne unique
+    name="Hello BLE",                # affiché dans le menu
+    apptype=FlipperAppType.APP,      # application utilisateur classique
+    entry_point="hello_ble_main",    # fonction C dans hello_ble.c
+    stack_size=1 * 1024,             # 1 kio de pile ; suffisant ici
+    requires=[
+        "bt",                        # dépend juste du Bluetooth
+    ],
+    order=10,                        # position dans Applications → User
+)
