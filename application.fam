@@ -1,11 +1,12 @@
 App(
     appid="hello_ble",
-    name="Hello BLE",
+    name="HelloBLE",
     apptype=FlipperAppType.APP,
     entry_point="hello_ble_main",
-    stack_size=1 * 1024,
-    requires=[
-        "bt",
-    ],
-    order=10,
+    requires=["bt"],
+    stack_size=2 * 1024,
+    fap_category="Connectivity",
+    fap_version="1.0",
+    fap_description="Simulated APRS packets over BLE",
+    fap_author="Tristan MIGNON",
 )
