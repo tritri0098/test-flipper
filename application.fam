@@ -1,7 +1,7 @@
 App(
     appid="hello_ble",
     name="HelloBLE",
-    apptype=FlipperAppType.APP,
+    apptype=FlipperAppType.EXTERNAL,
     entry_point="hello_ble_main",
     requires=["bt"],
     stack_size=2 * 1024,
