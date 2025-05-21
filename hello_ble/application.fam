@@ -1,0 +1,8 @@
+App {
+    Type: Application
+    Name: Hello BLE
+    Version: 1
+    Exec: hello_ble_main
+    Description: Demo BLE Hello World
+    Author: Tristan MIGNON
+}
