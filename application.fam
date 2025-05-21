@@ -1,11 +1,11 @@
 App(
-    appid="hello_ble",               # nom interne unique
-    name="Hello BLE",                # affiché dans le menu
-    apptype=FlipperAppType.APP,      # application utilisateur classique
-    entry_point="hello_ble_main",    # fonction C dans hello_ble.c
-    stack_size=1 * 1024,             # 1 kio de pile ; suffisant ici
+    appid="hello_ble",
+    name="Hello BLE",
+    apptype=FlipperAppType.APP,
+    entry_point="hello_ble_main",
+    stack_size=1 * 1024,
     requires=[
-        "bt",                        # dépend juste du Bluetooth
+        "bt",
     ],
-    order=10,                        # position dans Applications → User
+    order=10,
 )
